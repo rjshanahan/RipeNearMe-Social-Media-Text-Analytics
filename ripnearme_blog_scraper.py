@@ -10,6 +10,7 @@ import re
 url_standard = 'http://www.ripenear.me/blog'    
 url_next_page = '?page='
 
+
 #web request function
 def make_request_get(data):
 
@@ -18,11 +19,9 @@ def make_request_get(data):
     return r.text
 
 
-
+#function to build URL list for each blog entry nd page
 def url_extract(url_standard):
     
-    global url_list
-    url_blog_pages = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
     url_list = []    
     
     #initial blog page
@@ -34,30 +33,28 @@ def url_extract(url_standard):
             url_list.append('http://www.ripenear.me' + i.a["href"])
         else:
             pass
-    
+  
     #subsequent blog pages
-    for n in url_blog_pages:
-        
-        if len(make_request_get(url_standard+url_next_page+n)) > 30800:
-            soup = BeautifulSoup(make_request_get(url_standard+url_next_page+n), "html.parser")
+    n = 1
     
-            for i in soup.find_all('span', {'class':'field-content'}):
+    while (len(make_request_get(url_standard+url_next_page+str(n))) > 30800) is True:     # 30800 is the length of non-existent blogpage
+        soup = BeautifulSoup(make_request_get(url_standard+url_next_page+str(n)), "html.parser")
+    
+        for i in soup.find_all('span', {'class':'field-content'}):
 
-                if i.a != None and i.a["href"].startswith('/blog'):
-                    url_list.append('http://www.ripenear.me' + i.a["href"])
-                else:
-                    pass
-        else:
-            pass
+            if i.a != None and i.a["href"].startswith('/blog'):
+                url_list.append('http://www.ripenear.me' + i.a["href"])
+            else:
+                pass                       
+            n += 1
 
     return blogxtract(url_list)
 
 
+
 #build dictionary of desired values
 def blogxtract(url_list):
-    
-    global soup    
-    
+        
     problemchars = re.compile(r'[\[=\+/&<>;:!\\|*^\'"\?%#$@)(_\,\.\t\r\n0-9-—\]]')
     prochar = '[(=\+\:/&<>;\'"\?%#$@\,\._)]'
     
@@ -130,3 +127,4 @@ def writer_csv_3(blog_list):
     
 #tip the domino    
 url_extract(url_standard)
+
