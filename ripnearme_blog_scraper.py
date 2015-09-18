@@ -107,14 +107,14 @@ def blogxtract(url_list):
         
      
     #call csv writer function and output file
-    writer_csv_3(blog_list, url)
+    writer_csv_3(blog_list)
     
     return pp.pprint(blog_list)
 
 
 
 #function to write CSV
-def writer_csv_3(blog_list, url):
+def writer_csv_3(blog_list):
     
     #file_out = "ripenearme{page}.csv".format(page = url.split('blog/',1)[1])
     file_out = "ripenearme_blogs.csv"
