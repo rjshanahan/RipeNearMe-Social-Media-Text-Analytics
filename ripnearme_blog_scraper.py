@@ -59,7 +59,7 @@ def url_extract(url_standard):
 def blogxtract(url_list):
         
     problemchars = re.compile(r'[\[=\+/&<>;:!\\|*^\'"\?%#$@)(_\,\.\t\r\n0-9-—\]]')
-    prochar = '[(=\+\:/&<>;\'"\?%#$@\,\._)]'
+    prochar = '[(=\+\-\:/&<>;\'"\?%#$@\,\._)]'
     
     blog_list = []
     
