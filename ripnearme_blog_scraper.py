@@ -8,6 +8,7 @@ import codecs
 import csv
 import pprint as pp
 import re
+from collections import OrderedDict
 
 
 url_standard = 'http://www.ripenear.me/blog'    
@@ -100,7 +101,8 @@ def blogxtract(url_list):
             "header": (header if len(header) != 0 else u.split('blog/',1)[1].replace('-',' ').encode('ascii', 'ignore').strip().lower().translate(None, ''.join(prochar))),
             "user": (user if len(user) != 0 else (i.find('h5').text.encode('ascii', 'ignore').strip().lower().translate(None, ''.join(prochar)) if len(user) == 0 else "")),
             "date": (date if len(date) != 0 else (i.parent.find('abbr', {'class':None}).text.encode('ascii', 'ignore').strip().lower() if i.parent.find('abbr', {'class':None}) is not None else "")),
-            "blog_text": ' '.join(text_list_final)
+            #"blog_text": ' '.join(text_list_final)
+            "blog_text": ' '.join(list(OrderedDict.fromkeys(text_list_final)))
                 }
         
             blog_list.append(blog_dict)
