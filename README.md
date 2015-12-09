@@ -6,6 +6,7 @@ The repository includes code used to extract, process, integrate, model and visu
 ####*<a href="https://rjshanahan.shinyapps.io/shiny_ripenearme01" target="_blank">Interactively explore RipeNearMe Social Media Text Analytics</a>* 
 
 Code included in this repository:
+- final dataset
 - web scrapers for Facebook, Twitter and RipeNearMe blog entries (written in Python)
 - pre-processing, integration and feature selection code (written in R)
 - sentiment analysis code using the Aylien API (written in Python)
