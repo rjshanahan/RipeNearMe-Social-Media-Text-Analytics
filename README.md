@@ -8,6 +8,8 @@ The repository includes code used to extract, process, integrate, model and visu
 Code included in this repository:
 - final dataset
 - web scrapers for Facebook, Twitter and RipeNearMe blog entries (written in Python)
+  - Facebook page and group *<a href="https://github.com/rjshanahan/facebook_m_scraper" target="_blank">webscraper</a>* 
+  - Twitter *<a href="https://github.com/rjshanahan/twitter_scraper" target="_blank">webscraper</a>* 
 - pre-processing, integration and feature selection code (written in R)
 - sentiment analysis code using the Aylien API (written in Python)
 - interactive visualisation code (written in R using the Shiny package)
@@ -29,4 +31,21 @@ Code included in this repository:
 Note: sentiment and subjectivity analysis was undertaken using the <a href="http://aylien.com/" target="_blank">Python API from Aylien </a>
 
 ![Aylien](http://aylien.com/images/graph.png)
+
+
+####Datasources - 2015 data
+|URL										| Site                  |
+|:---------------------------------------------------|:-------|
+|https://twitter.com/hashtag/growyourown				| Twitter	|
+|https://twitter.com/ripenearme			| Twitter	|
+|http://www.ripenear.me/blog				| RipeNearMe	|
+|https://m.facebook.com/groups/JETTOSPATCH/   							| Facebook	|
+|https://m.facebook.com/groups/335757083118409/							| Facebook	|
+|https://m.facebook.com/groups/447193975415704/						| Facebook	|
+|https://m.facebook.com/Bitsouttheback/					| Facebook	|
+|https://m.facebook.com/groups/QC.EdibleLandscape/				| Facebook	|
+|https://m.facebook.com/groups/dig.your.way.to.a.better.world/				| Facebook	|
+
+
+
 
