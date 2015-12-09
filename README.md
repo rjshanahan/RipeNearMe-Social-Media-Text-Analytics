@@ -9,6 +9,7 @@ Code included in this repository:
 - web scrapers for Facebook, Twitter and RipeNearMe blog entries (written in Python)
 - pre-processing, integration and feature selection code (written in R)
 - sentiment analysis code using the Aylien API (written in Python)
+- interactive visualisation code (written in R using the Shiny package)
 - note: predictive modelling was undertaken in SAS Enterprise Miner
 
 ####Definitions for  <a href="https://rjshanahan.shinyapps.io/shiny_ripenearme01" target="_blank">interactive social media text analytics visualisation</a>
