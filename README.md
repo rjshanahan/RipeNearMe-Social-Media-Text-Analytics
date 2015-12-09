@@ -6,7 +6,8 @@ The repository includes code used to extract, process, integrate, model and visu
 ####*<a href="https://rjshanahan.shinyapps.io/shiny_ripenearme01" target="_blank">Interactively explore RipeNearMe Social Media Text Analytics</a>* 
 
 Code included in this repository:
-- final dataset
+- final pre-processed and integrated dataset
+- wiki page describing the analyses undertaken
 - web scrapers for Facebook, Twitter and RipeNearMe blog entries (written in Python)
   - Facebook page and group *<a href="https://github.com/rjshanahan/facebook_m_scraper" target="_blank">webscraper</a>* 
   - Twitter *<a href="https://github.com/rjshanahan/twitter_scraper" target="_blank">webscraper</a>* 
@@ -19,7 +20,7 @@ Code included in this repository:
 |Attribute										| Description                  | Visualisation Use  |
 |:---------------------------------------------------|:-------|:---------------------|
 |sentiment   							| Natural language processing was used to determine the overall *sentiment* of the post - was it **positive, negative or neutral**	| ```colouring```	  |
-|subjetivity   							| Natural language processing was used to determine the overall *subjectivity* of the post - was it **subjective or objective**	| ```colouring```	  |
+|subjectivity   							| Natural language processing was used to determine the overall *subjectivity* of the post - was it **subjective or objective**	| ```colouring```	  |
 |user   							| the *user* name used to create the post	| ```x-axis```	  |
 |hashtag 							| the *hashtag* used in the posts where applicable	| ```x-axis```	  |
 |like_fave					| the total 'likes' or 'favorites' given to the post	| ```y-axis```	  |
