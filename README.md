@@ -7,7 +7,7 @@ The repository includes code used to extract, process, integrate, model and visu
 
 Code included in this repository:
 - final pre-processed and integrated dataset
-- wiki page describing the analyses undertaken
+- *<a href="https://github.com/rjshanahan/RipeNearMe-Social-Media-Text-Analytics/wiki" target="_blank">wiki page</a>*  describing the analyses undertaken 
 - web scrapers for Facebook, Twitter and RipeNearMe blog entries (written in Python)
   - Facebook page and group *<a href="https://github.com/rjshanahan/facebook_m_scraper" target="_blank">webscraper</a>* 
   - Twitter *<a href="https://github.com/rjshanahan/twitter_scraper" target="_blank">webscraper</a>* 
