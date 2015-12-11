@@ -20,7 +20,7 @@ Code included in this repository:
 |Attribute										| Description                  | Visualisation Use  |
 |:---------------------------------------------------|:-------|:---------------------|
 |sentiment   							| Natural language processing was used to determine the overall *sentiment* of the post - was it *positive, negative or neutral*	| ```colouring```	  |
-|subjectivity   							| Natural language processing was used to determine the overall *subjectivity* of the post - was it **subjective or objective**	| ```colouring```	  |
+|subjectivity   							| Natural language processing was used to determine the overall *subjectivity* of the post - was it *subjective or objective*	| ```colouring```	  |
 |user   							| the *user* name used to create the post	| ```x-axis```	  |
 |hashtag 							| the *hashtag* used in the posts where applicable	| ```x-axis```	  |
 |like_fave					| the total *likes* or *favorites* given to the post	| ```y-axis```	  |
@@ -28,7 +28,7 @@ Code included in this repository:
 |posts					| the total number of *posts* by user or hashtag	| ```y-axis```	  |
 |twitter					| the post source	| ```filter```	  |
 |facebook					| the post source	| ```filter```	  |
-|twitter_ripenearme				| the post source - specifically when retrieved from the @RipeNearMe Twitter account	| ```filter```	  |
+|twitter_ripenearme				| the post source - specifically when retrieved from the @RipeNearMe Twitter account - this includes retweets from other users	| ```filter```	  |
 Note: sentiment and subjectivity analysis was undertaken using the <a href="http://aylien.com/" target="_blank">Python API from Aylien </a>
 
 ![Aylien](http://aylien.com/images/graph.png)
